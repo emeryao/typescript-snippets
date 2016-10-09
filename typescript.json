@@ -1,0 +1,24 @@
+{
+	"New Async function": {
+		"prefix": "afun",
+		"body": [
+			"async function ${1:foo}(): Promise<${2:boolean}> {",
+			"	return new Promise<${2:boolean}>((resolve, reject) => {",
+			"		",
+			"	});",
+			"}"
+		],
+		"description": "a new async function"
+	},
+	"New async method": {
+		"prefix": "amethod",
+		"body": [
+			"${0:private} async ${1:foo}(): Promise<${2:boolean}> {",
+			"	return new Promise<${2:boolean}>((resolve, reject) => {",
+			"		",
+			"	});",
+			"}"
+		],
+		"description": "a new async method in class"
+	}
+}
