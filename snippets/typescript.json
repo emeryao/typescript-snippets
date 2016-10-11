@@ -3,9 +3,9 @@
 		"prefix": "afun",
 		"body": [
 			"async function ${1:foo}(): Promise<${2:boolean}> {",
-			"	return new Promise<${2:boolean}>((resolve, reject) => {",
-			"		",
-			"	});",
+			"\treturn new Promise<${2:boolean}>((resolve, reject) => {",
+			"\t\t$3",
+			"\t});",
 			"}"
 		],
 		"description": "a new async function"
@@ -14,9 +14,9 @@
 		"prefix": "amethod",
 		"body": [
 			"${0:private} async ${1:foo}(): Promise<${2:boolean}> {",
-			"	return new Promise<${2:boolean}>((resolve, reject) => {",
-			"		",
-			"	});",
+			"\treturn new Promise<${2:boolean}>((resolve, reject) => {",
+			"\t\t$3",
+			"\t});",
 			"}"
 		],
 		"description": "a new async method in class"
